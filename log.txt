@@ -1,0 +1,3 @@
+{"free":"1048 MB","total":"8074 MB","usage":"12 %"}
+{"free":"1035 MB","total":"8074 MB","usage":"12 %"}
+{"free":"1041 MB","total":"8074 MB","usage":"12 %"}
