@@ -37,7 +37,7 @@
 > */
 const http = require('http')
 const fs = require('fs')
-const path = require('path') 
+const path = require('path')
 
 http.createServer((req, res) => {               /* req é a requisição que estou pedindo para o servidor www.site/contatos,    res é a resposta do servidor */
 
@@ -46,7 +46,7 @@ http.createServer((req, res) => {               /* req é a requisição que est
     const extname = path.extname(filePath)
 
 
-    const allowedFileType = [',html', '.css', '.js']
+    const allowedFileType = ['.html', '.css', '.js']
     const allowed = allowedFileType.find((item) => item == extname)
 
     if(!allowed) return
@@ -74,4 +74,4 @@ http.createServer((req, res) => {               /* req é a requisição que est
     }
     if(req.url === '/primeiroTeste') return res.end('<h1>Home Page</h1><a href="./contato">Ir para contatos</a>')
     if(req.url === '/contato') return res.end('<h1>Contato</h1>') */
-}).listen(8800, () => console.log('Server esta rodando'))
+}).listen(5000, () => console.log('Server esta rodando'))
