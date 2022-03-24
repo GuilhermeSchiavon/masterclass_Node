@@ -23,3 +23,12 @@ Retorno da API:
          0: {nome: 'Guilherme', url: 'http://rocketseat.com.br'}
          1: {nome: 'GoogleBR', url: 'https://google.com.br'}
          2: {name: 'Google', url: 'https://google.com'}
+
+
+
+Desafios
+ - Fazer a integração com a API para
+      - Deletar
+      - Adcionar
+
+Dica: usar a função "fetch" (3000)
