@@ -11,6 +11,10 @@
     {
       "name": "Google",
       "url": "https://google.com"
+    },
+    {
+      "name": "LocalHost",
+      "url": "http://localhost:5000/index.html"
     }
   ]
 }

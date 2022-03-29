@@ -26,6 +26,8 @@ function addElement({ name, url }) {
     li.append(a)
     li.append(trash)
     ul.append(li)
+
+
 }
 
 function removeElement(el, name, url) {
@@ -37,7 +39,6 @@ function removeElement(el, name, url) {
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-
     let { value } = input
 
     if (!value)
@@ -52,6 +53,7 @@ form.addEventListener("submit", (event) => {
         return alert("Digite a url da maneira correta")
 
     addElement({ name, url })
+    fetch("http://localhost:3000/?&name="+name+"&url="+url)
 
     input.value = ""
 })
